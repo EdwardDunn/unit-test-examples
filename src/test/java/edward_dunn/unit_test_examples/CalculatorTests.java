@@ -29,5 +29,21 @@ public class CalculatorTests extends TestCase {
 		//assert
 		assertEquals(expectedResult, actualResult);
 	}
+	
+	@Test
+	public void test_subtract_GivenPositiveNum_ReturnCorrectResult() {
+		//arrange
+		int num1 = 20;
+		int num2 = 2;
+		int expectedResult = 18;
+		int actualResult = 0;
+		
+		//act
+		Calculator calculator = new Calculator();
+		actualResult = calculator.subtract(num1, num2);
+		
+		//assert
+		assertEquals(expectedResult, actualResult);
+	}
 
 }
