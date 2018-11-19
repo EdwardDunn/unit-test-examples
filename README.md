@@ -2,7 +2,7 @@
 Unit testing examples designed to help the adoption of TDD.
 
 ## Current Examples
-- n/a
+- Simple testing - calculator example
 
 ## Installation
 - Maven 
