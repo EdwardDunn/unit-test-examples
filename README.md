@@ -9,8 +9,8 @@ Unit testing examples designed to help the adoption of TDD.
 
 ## Tests Naming Convention
 
-- MethodName_StateUnderTest_ExpectedBehavior
-- Example - isAdult_AgeLessThan18_False
+- Test_MethodName_StateUnderTest_ExpectedBehavior
+- Example - test_isAdult_AgeLessThan18_False
 
 ## License 
 MIT
