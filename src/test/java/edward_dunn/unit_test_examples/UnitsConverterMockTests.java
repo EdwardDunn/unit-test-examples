@@ -32,8 +32,7 @@ public class UnitsConverterMockTests {
 	@Test
 	public void test_convertGramsToKG_GivenNormalRange_ReturnResult() {
 		when(convertService.convertGramsToKG(1000)).thenReturn(1.0);
-
-		// test the add functionality
+		
 		Assert.assertEquals(1.0, unitsConverter.convertGramsToKG(1000));
 	}
 	
@@ -41,15 +40,13 @@ public class UnitsConverterMockTests {
 	public void test_convertPoundsToStone_GivenNormalRange_ReturnResult() {
 		when(convertService.convertPoundsToStone(130)).thenReturn(9.29);
 
-		// test the add functionality
 		Assert.assertEquals(9.29, unitsConverter.convertPoundsToStone(130));
 	}
 	
 	@Test
 	public void test_convertFeetToYards_GivenNormalRange_ReturnResult() {
 		when(convertService.convertFeetToYards(1000)).thenReturn(333.33);
-
-		// test the add functionality
+		
 		Assert.assertEquals(333.33, unitsConverter.convertFeetToYards(1000));
 	}
 
