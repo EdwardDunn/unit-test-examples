@@ -17,10 +17,10 @@ public class CalculatorTests extends TestCase {
 	@Test
 	public void test_add_GivenPositiveNum_ReturnCorrectResult() {
 		//arrange
-		int num1 = 5;
-		int num2 = 6;
-		int expectedResult = 11;
-		int actualResult = 0;
+		double num1 = 5;
+		double num2 = 6;
+		double expectedResult = 11;
+		double actualResult = 0;
 		
 		//act
 		Calculator calculator = new Calculator();
@@ -33,14 +33,46 @@ public class CalculatorTests extends TestCase {
 	@Test
 	public void test_subtract_GivenPositiveNum_ReturnCorrectResult() {
 		//arrange
-		int num1 = 20;
-		int num2 = 2;
-		int expectedResult = 18;
-		int actualResult = 0;
+		double num1 = 20;
+		double num2 = 2;
+		double expectedResult = 18;
+		double actualResult = 0;
 		
 		//act
 		Calculator calculator = new Calculator();
 		actualResult = calculator.subtract(num1, num2);
+		
+		//assert
+		assertEquals(expectedResult, actualResult);
+	}
+	
+	@Test
+	public void test_multiply_GivenPositiveNum_ReturnCorrectResult() {
+		//arrange
+		double num1 = 10.5;
+		double num2 = 2;
+		double expectedResult = 21;
+		double actualResult = 0;
+		
+		//act
+		Calculator calculator = new Calculator();
+		actualResult = calculator.multiply(num1, num2);
+		
+		//assert
+		assertEquals(expectedResult, actualResult);
+	}
+	
+	@Test
+	public void test_divide_GivenPositiveNum_ReturnCorrectResult() {
+		//arrange
+		double num1 = 50;
+		double num2 = 5;
+		double expectedResult = 10;
+		double actualResult = 0;
+		
+		//act
+		Calculator calculator = new Calculator();
+		actualResult = calculator.divide(num1, num2);
 		
 		//assert
 		assertEquals(expectedResult, actualResult);
