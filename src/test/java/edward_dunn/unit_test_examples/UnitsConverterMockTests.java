@@ -1,12 +1,17 @@
 package edward_dunn.unit_test_examples;
 
 import static org.junit.Assert.*;
-
+import static org.mockito.Mockito.when;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
-public class CalculatorMockTests {
+@RunWith(MockitoJUnitRunner.class)
+public class UnitsConverterMockTests {
 
 	@Before
 	public void setUp() throws Exception {
@@ -16,9 +21,5 @@ public class CalculatorMockTests {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
 
 }
