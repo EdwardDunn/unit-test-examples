@@ -37,6 +37,13 @@ public class UnitsConverterMockTests {
 	}
 	
 	@Test
+	public void test_convertGramsToKG_GivenExceptionalRange_ReturnResult() {
+		when(convertService.convertGramsToKG(5556288)).thenReturn(5556.29);
+		
+		Assert.assertEquals(5556.29, unitsConverter.convertGramsToKG(5556288));
+	}
+	
+	@Test
 	public void test_convertPoundsToStone_GivenNormalRange_ReturnResult() {
 		when(convertService.convertPoundsToStone(130)).thenReturn(9.29);
 
@@ -44,10 +51,24 @@ public class UnitsConverterMockTests {
 	}
 	
 	@Test
+	public void test_convertPoundsToStone_GivenExceptionalRange_ReturnResult() {
+		when(convertService.convertPoundsToStone(25000)).thenReturn(1785.71);
+
+		Assert.assertEquals(1785.71, unitsConverter.convertPoundsToStone(25000));
+	}
+	
+	@Test
 	public void test_convertFeetToYards_GivenNormalRange_ReturnResult() {
 		when(convertService.convertFeetToYards(1000)).thenReturn(333.33);
 		
 		Assert.assertEquals(333.33, unitsConverter.convertFeetToYards(1000));
+	}
+	
+	@Test
+	public void test_convertFeetToYards_GivenExceptionalRange_ReturnResult() {
+		when(convertService.convertFeetToYards(555999)).thenReturn(185333.0);
+		
+		Assert.assertEquals(185333.0, unitsConverter.convertFeetToYards(555999));
 	}
 
 }

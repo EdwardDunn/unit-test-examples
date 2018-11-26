@@ -3,7 +3,9 @@ package edward_dunn.unit_test_examples;
 public class UnitsConverter implements ConverterService {
 
 	public double convertGramsToKG(double grams) {
-		return grams / 1000;
+		double result =  grams / 1000;
+		
+		return Math.round(result * 100.0) / 100.0;
 	}
 
 	public double convertPoundsToStone(double pounds) {
