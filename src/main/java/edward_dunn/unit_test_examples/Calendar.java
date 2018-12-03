@@ -8,7 +8,7 @@ public class Calendar {
 	
 //	The aim of this class is to implement a simple calendar application that
 //	can be used to illustrate how JUnit can be used for performance testing. In this case
-//	the test will fail if the result is not returned within 2ms.
+//	the test will fail if the result is not returned within 1000ms.
 	
 	
 	public String getCurrentDate() {
