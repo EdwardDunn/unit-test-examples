@@ -20,7 +20,8 @@ public class CalendarTests {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+	// the timeout function here can be used to set the maximum request time allowed
+	@Test (timeout = 1000)
 	public void test_getCurrentDate_GivenNothing_ReturnCurrentDate() {
 		// arrange
 		String expectedResult = LocalDate.now().toString();
@@ -34,7 +35,7 @@ public class CalendarTests {
 		assertEquals(expectedResult, actualResult);		
 	}
 	
-	@Test
+	@Test (timeout = 1000)
 	public void test_getCurrentDayOfWeek_GivenNothing_ReturnCurrentDayOfWeek() {
 		// arrange
         Date now = new Date();
