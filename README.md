@@ -4,6 +4,7 @@ Unit testing examples designed to help the adoption of TDD.
 ## Current Examples
 - Simple testing - calculator example
 - Mockito - simple units converter example
+- Timeout functionality 
 
 ## Installation
 - Maven 
