@@ -76,6 +76,6 @@ public class CalculatorTests extends TestCase {
 		
 		//assert
 		assertEquals(expectedResult, actualResult);
-	}
+	}	
 
 }
