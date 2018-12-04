@@ -6,6 +6,8 @@ Unit testing examples designed to help the adoption of TDD.
 - Mockito - units converter example
 - Timeout functionality - calendar example
 - Testsuite
+- Hamcrest examples
+- JUnit Assertions list
 
 ## Installation
 - Maven 
