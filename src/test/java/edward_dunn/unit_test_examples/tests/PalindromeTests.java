@@ -17,7 +17,7 @@ public class PalindromeTests extends TestCase {
 	}
 	
 	@Test
-	public void testApp(){
+	public void test_isPalindrome_GivenPalindrom_ReturnTrue(){
 		Palindrome pc = new Palindrome();
 		String word = "madam";
 		boolean expected = true;
