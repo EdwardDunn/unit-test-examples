@@ -1,4 +1,4 @@
-package edward_dunn.unit_test_examples;
+package edward_dunn.unit_test_examples.tests;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
@@ -10,10 +10,16 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import edward_dunn.unit_test_examples.ConverterService;
+import edward_dunn.unit_test_examples.UnitsConverter;
 import junit.framework.Assert;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 @RunWith(MockitoJUnitRunner.class)
-public class UnitsConverterMockTests {
+public class UnitsConverterMockTests extends junit.framework.TestCase {
 
 	@Before
 	public void setUp() throws Exception {

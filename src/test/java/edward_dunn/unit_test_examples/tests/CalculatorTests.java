@@ -1,15 +1,19 @@
-package edward_dunn.unit_test_examples;
+package edward_dunn.unit_test_examples.tests;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.TestCase;
+import edward_dunn.unit_test_examples.Calculator;
 
-public class CalculatorTests extends TestCase {
+public class CalculatorTests extends junit.framework.TestCase {
 
+	@Before
 	protected void setUp() throws Exception {
 		super.setUp();
 	}
 
+	@After
 	protected void tearDown() throws Exception {
 		super.tearDown();
 	}

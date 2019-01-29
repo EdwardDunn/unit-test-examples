@@ -1,4 +1,4 @@
-package edward_dunn.unit_test_examples;
+package edward_dunn.unit_test_examples.tests;
 
 import static org.junit.Assert.*;
 
@@ -10,7 +10,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CalendarTests {
+import edward_dunn.unit_test_examples.Calendar;
+
+public class CalendarTests extends junit.framework.TestCase {
 
 	@Before
 	public void setUp() throws Exception {
