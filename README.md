@@ -14,7 +14,7 @@ Unit testing examples designed to help the adoption of TDD.
 
 ## Tests Naming Convention
 - Test_MethodName_StateUnderTest_ExpectedBehavior
-- Example - test_isAdult_AgeLessThan18_False
+- Example - test_isPalindrome_GivenPalindrome_True
 
 ## License 
 MIT
