@@ -1,5 +1,5 @@
 # unit-test-examples
-Unit testing examples designed to help the adoption of TDD.
+Unit test examples used to help teach the basics required to start practicing TDD.
 
 ## Current Examples
 - Simple testing - calculator example
